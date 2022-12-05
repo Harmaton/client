@@ -6,14 +6,13 @@ import Topbar from '../components/Topbar';
 import TopDetails from '../components/TopDetails';
 import TopNavbar from '../components/TopNavbar';
 import Feedback from '../components/Feedback';
+import '../styles/HomePage.css';
 
 export default function 
 () {
   return (
-    <div className='homepage'>
+    <div className='Homepage'>
         <>
-      <TopDetails />
-     <TopNavbar />
      <Topbar />
      <About />
      <ProductList />

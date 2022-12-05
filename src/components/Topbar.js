@@ -58,6 +58,7 @@ export default function Topbar() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
+      
     </Carousel>
     </Col>
     <Col xs={12} md={6}>

@@ -2,34 +2,34 @@ import React from 'react'
 import { Row, Col, Container, Form, Button } from 'react-bootstrap';
 import { Facebook, Instagram, Twitter, Youtube } from 'react-bootstrap-icons';
 import Copyright from './Copyright';
-
+import '../styles/Footer.css'
 
 
 export default function Footer() {
 
   return (
 
-    <Container background = "dark">
-    <Row>
+    <div className='Footer'>
 
+    <Container >
+    <Row>
+    <h6>Give us your feedback/comment</h6>
     <Col xs={12} md={8}>
      <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Label>Phone Number</Form.Label>
+        <Form.Control type="number" placeholder="Enter phone" />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+          We'll never share your number with anyone else.
         </Form.Text>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Label>Name</Form.Label>
+        <Form.Control type="text" placeholder="your name" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="warning" type="submit">
+    
+      <Button variant="warning"  type="submit">
         Submit
       </Button>
     </Form>
@@ -38,23 +38,21 @@ export default function Footer() {
     <Col xs={12} md={4}>
 
       <div className = "socials">
-      <Facebook size={25} />
-      <Instagram size={25} />
-      <Twitter size={25} />
-      <Youtube size={25} />
+      <Facebook size={25} color= 'blue' className='icon' />
+      <Instagram size={25} color= 'red'className='icon'  />
+      <Twitter size={25} color= 'blue' className='icon' />
+      <Youtube size={25}  color= 'red' className='icon' />
       </div>
-     
-
 
     </Col>
   </Row>
 
-  <br/>
+  <hr/>
 
   <Copyright />
 
   </Container>
-
+  </div>
   )
 }
 

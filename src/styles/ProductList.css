@@ -1,0 +1,18 @@
+.Products {
+    display: flex;
+
+}
+
+.Products .header {
+    text-align: start;
+    margin: 15px;
+}
+
+.Products .item {
+text-align: center;
+}
+
+.Products .item .card {
+    height: 400px;
+    margin: 10px;
+}

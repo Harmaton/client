@@ -8,7 +8,7 @@ export default function Feedback() {
     <h5> Your Feedbacks</h5>
     <Row>
       <Col xs={12} md={4} >
-    <Card border="warning" >
+    <Card className="text-center" border="warning" >
         <Card.Header> <Quote /> </Card.Header>
         <Card.Body>
           <Card.Title>Mohammed Ali</Card.Title>

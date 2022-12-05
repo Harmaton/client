@@ -1,10 +1,13 @@
 import Container from 'react-bootstrap/Container';
 import React from 'react';
 import {PhoneFill, Mailbox, MapFill} from 'react-bootstrap-icons';
+import '../styles/TopDetails.css'
 
 
 function TopDetails(){
     return(
+  
+      <div className='Details'>
        <Container color='warning' >
 
       <div className='row' lg='1'  md='6' sm ="12" color='warning'>
@@ -30,6 +33,7 @@ function TopDetails(){
         <MapFill color= 'red' />  </span>
         </div>
        </Container>
+       </div>
     )
 }
 

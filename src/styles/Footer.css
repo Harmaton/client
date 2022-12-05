@@ -1,0 +1,14 @@
+.Footer {
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.socials {
+    margin: 25px;
+    padding: 10px;
+}
+
+.socials .icon {
+    margin: 10px;
+}
