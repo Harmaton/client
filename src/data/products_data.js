@@ -37,7 +37,7 @@ const products_data = [
                 imageUrl: "/images/puri.jpg",
                 price: '250 000',
                 was: '280 000',
-                currency: 'KSH ',
+                currency: 'Ksh',
                 description: 'Structured to suit your needs, shiny silver' ,
                 }
 

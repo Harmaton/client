@@ -19,7 +19,6 @@ function About() {
         </Card.Text>
         </Col>
 
-        <hr />
 
         <Col md={6} xs = {12}>
         <Card.Title> <b>Vision</b> </Card.Title>

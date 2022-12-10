@@ -29,7 +29,7 @@ function TopDetails(){
 
       </div>
       <div className='col' md ='3' sm="12" >
-        <i> Kangudo road off Eastern Bypass,Chokaa, next to Quality Meat Packers </i>  <span>
+        <i> Kangudo road off Eastern Bypass,<b>Chokaa</b>, next to Quality Meat Packers </i>  <span>
         <MapFill color= 'red' />  </span>
         </div>
        </Container>

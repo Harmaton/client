@@ -2,6 +2,8 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/esm/Container';
 import { Row, Col } from 'react-bootstrap';
+import '../styles/TopBar.css'
+import SingleCategory from './SingleCategory';
 
 export default function Topbar() {
 
@@ -12,12 +14,13 @@ export default function Topbar() {
   ];
   return (
     <>
+    <div >
     <Container >
        
     <Row>
     
-    <Col xs={12} md={6}>
-    <Carousel fade className='col' lg="9" md="6" sm= "12" >
+    <Col className="carousel" xs={12} md={8}>
+    <Carousel fade >
       <Carousel.Item interval={1000} style = {{height: 500}}>
         <img
           className="d-block w-100"
@@ -61,14 +64,17 @@ export default function Topbar() {
       
     </Carousel>
     </Col>
-    <Col xs={12} md={6}>
-       <h3>Product Categories</h3>
+
+    <Col xs={12} md={4} className="categories">
+       <h4 className="header">Categories</h4>
+       <SingleCategory />
        
     </Col>
 
   </Row>
    
     </Container>
+    </div>
     </>
   )
 }

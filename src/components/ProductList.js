@@ -6,25 +6,35 @@ import '../styles/ProductList.css';
 
 const ProductList = () => {
 return (
-<Container className = "Products">
+<div className='Products'>
 <Row>
-    <h5 className = "header" >Featured Products</h5>
+    <h5 className = "header" >Best Selling Products</h5>
 {
 Products.map((product, id) => (
 <Col xs={6} md={3} key={id}  className="item" >
 <Card className="card" >
 <Image src={product.imageUrl} height='180' />
-<Card.Body>
-<Card.Title>{product.name}</Card.Title>
-<Card.Text> <del>${product.was}</del> {``} {product.price}</Card.Text>
-<Button variant="danger" size='sm' > Add to Cart <CartFill /> </Button>
+
+<Card.Body className="body">
+
+    <Card.Title className = "title">{product.name}</Card.Title>
+    <del className="del">Ksh {product.was}</del>
+   <Card.Text className="price">Ksh {product.price}</Card.Text>
+    
+    <Button variant="danger" size='sm' className="button" > 
+    Add to Cart <CartFill /> </Button>
+    
+
+
+
+
 </Card.Body>
 </Card>
 </Col>
 ))
 }
 </Row>
-</Container>
+</div>
 );
 }
 

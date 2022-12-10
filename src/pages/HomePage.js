@@ -3,13 +3,11 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import ProductList from '../components/ProductList';
 import Topbar from '../components/Topbar';
-import TopDetails from '../components/TopDetails';
-import TopNavbar from '../components/TopNavbar';
 import Feedback from '../components/Feedback';
 import '../styles/HomePage.css';
+import ScrolltoTopButton from '../components/ScrolltoTopButton';
 
-export default function 
-() {
+export default function HomePage() {
   return (
     <div className='Homepage'>
         <>
@@ -18,7 +16,6 @@ export default function
      <ProductList />
      <Feedback />
      <Footer />
-     
      </>
     </div>
   )

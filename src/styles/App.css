@@ -1,0 +1,21 @@
+
+.brand {
+align-items: center;
+margin: 2%;
+padding: 1%;
+}
+.brand .name {
+color: black;
+font-weight: 800;
+margin: 1.5%;
+font-size: large;
+}
+.me-auto {
+    position: relative;
+    margin-right: 2%;
+    
+}
+.me-auto .link {
+    margin: 1%; 
+    position: inherit;
+}

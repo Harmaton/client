@@ -3,6 +3,7 @@ import { Row, Col, Container, Form, Button } from 'react-bootstrap';
 import { Facebook, Instagram, Twitter, Youtube } from 'react-bootstrap-icons';
 import Copyright from './Copyright';
 import '../styles/Footer.css'
+import ScrolltoTopButton from './ScrolltoTopButton';
 
 
 export default function Footer() {
@@ -42,8 +43,10 @@ export default function Footer() {
       <Instagram size={25} color= 'red'className='icon'  />
       <Twitter size={25} color= 'blue' className='icon' />
       <Youtube size={25}  color= 'red' className='icon' />
+      <ScrolltoTopButton />
       </div>
 
+     
     </Col>
   </Row>
 

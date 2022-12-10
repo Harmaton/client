@@ -1,18 +1,38 @@
 .Products {
-    display: flex;
+   margin: 2%;
 
 }
 
 .Products .header {
     text-align: start;
-    margin: 15px;
+    margin: 2%;
 }
 
 .Products .item {
 text-align: center;
+margin-bottom: 1%;
+
 }
 
-.Products .item .card {
-    height: 400px;
+.Products .card .item  {
+    height: 350px;
     margin: 10px;
+    width: 150px;
+  
+}
+
+.Products .item .card .body{
+margin-bottom: 5px;
+}
+
+.Products .item .card .body .price{
+    color: red;
+}
+
+.Products .item .card .body .button {
+    margin-top: 0px;
+    background-origin: padding-box;
+    position: inherit;
+    margin-left: 5px;
+    justify-content: center;
 }
